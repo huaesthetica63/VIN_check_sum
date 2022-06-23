@@ -14,7 +14,7 @@ int main() {
         cout<<endl;
         int check = getCheckSum(v);
         cout<<"Checksum is "<<check<<endl;
-        if(v[8]==check){
+        if(v[8]==check || (v[8]==replaceMap.at('X')&&check==10)){
             cout<<"Correct VIN!"<<endl;
         }
         else{
